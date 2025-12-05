@@ -1,0 +1,123 @@
+/* Infinity Fitness Lab - Main CSS */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Color Palette */
+    --bg-base: #0B0F14;
+    --bg-surface: #121417;
+    --primary: #00D4FF;
+    /* Cyan */
+    --secondary: #FF6A00;
+    /* Orange */
+    --glass: rgba(255, 255, 255, 0.04);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --text-primary: #E6EEF2;
+    --text-muted: #9AA6AE;
+    --success: #00ff88;
+    --danger: #ff4444;
+
+    /* Fonts */
+    --font-heading: 'Bebas Neue', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+
+    /* Spacing & Layout */
+    --header-height: 80px;
+    --border-radius: 12px;
+}
+
+/* Base Styles */
+body {
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+p,
+li,
+span,
+div {
+    color: var(--text-primary);
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-primary);
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+/* Utilities */
+.text-primary-custom {
+    color: var(--primary) !important;
+}
+
+.text-secondary-custom {
+    color: var(--secondary) !important;
+}
+
+.bg-surface {
+    background-color: var(--bg-surface);
+}
+
+.glass-panel {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius);
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-base);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-surface);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}
+
+/* AOS Offset Fix */
+[data-aos] {
+    pointer-events: none;
+}
+
+[data-aos].aos-animate {
+    pointer-events: auto;
+}

@@ -1,0 +1,144 @@
+/* Infinity Fitness Lab - Bootstrap Overrides */
+
+/* Buttons */
+.btn {
+    font-family: var(--font-body);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 12px 30px;
+    border-radius: 50px;
+    /* Pill shape */
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--bg-base);
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+}
+
+.btn-primary:hover {
+    background: #00b8dd;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
+    color: var(--bg-base);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: var(--bg-base);
+    transform: translateY(-2px);
+}
+
+.btn-accent {
+    background: var(--secondary);
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 106, 0, 0.3);
+}
+
+.btn-accent:hover {
+    background: #e65f00;
+    transform: translateY(-2px);
+    color: white;
+}
+
+/* Forms */
+.form-control,
+.form-select {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--glass-border);
+    color: var(--text-primary);
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--bg-surface);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgba(0, 212, 255, 0.1);
+    color: var(--text-primary);
+}
+
+/* Cards */
+.card {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+/* Modals */
+.modal-content {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--glass-border);
+    color: var(--text-primary);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--glass-border);
+}
+
+.btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(11, 15, 20, 0.8);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--text-primary);
+}
+
+.nav-link {
+    font-family: var(--font-body);
+    font-weight: 500;
+    color: var(--text-primary) !important;
+    font-size: 0.95rem;
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.navbar-toggler {
+    border: none;
+    color: var(--text-primary);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}

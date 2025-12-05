@@ -1,0 +1,88 @@
+{
+    "trainers": [
+        {
+            "id": 1,
+            "name": "Alex 'The Titan' Mercer",
+            "specialty": "Strength & Conditioning",
+            "image": "https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=800&q=80",
+            "bio": "Former Olympian with 10 years of coaching experience. Specializes in powerlifting and hypertrophy.",
+            "social": { "instagram": "#", "twitter": "#" }
+        },
+        {
+            "id": 2,
+            "name": "Sarah Jenkins",
+            "specialty": "HIIT & Cardio",
+            "image": "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80",
+            "bio": "Certified HIIT instructor known for high-energy classes that burn calories fast.",
+            "social": { "instagram": "#", "facebook": "#" }
+        },
+        {
+            "id": 3,
+            "name": "Marcus Chen",
+            "specialty": "Yoga & Mobility",
+            "image": "https://images.unsplash.com/photo-1544367563-12123d8965cd?auto=format&fit=crop&w=800&q=80",
+            "bio": "Focuses on functional movement, flexibility, and injury prevention.",
+            "social": { "instagram": "#" }
+        }
+    ],
+    "classes": [
+        {
+            "id": "c1",
+            "name": "Inferno HIIT",
+            "duration": "45 min",
+            "intensity": "High",
+            "image": "https://images.unsplash.com/photo-1534258936925-c48947387e3b?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            "id": "c2",
+            "name": "Power Lift",
+            "duration": "60 min",
+            "intensity": "High",
+            "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            "id": "c3",
+            "name": "Zen Flow Yoga",
+            "duration": "60 min",
+            "intensity": "Low",
+            "image": "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&w=800&q=80"
+        }
+    ],
+    "products": [
+        {
+            "id": "p1",
+            "name": "Infinity Whey Protein",
+            "price": 49.99,
+            "category": "Supplements",
+            "image": "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            "id": "p2",
+            "name": "Pro Lifting Straps",
+            "price": 19.99,
+            "category": "Gear",
+            "image": "https://images.unsplash.com/photo-1517130038641-a774d04afb3c?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            "id": "p3",
+            "name": "Infinity Water Bottle",
+            "price": 14.99,
+            "category": "Accessories",
+            "image": "https://images.unsplash.com/photo-1602143407151-011141959323?auto=format&fit=crop&w=800&q=80"
+        }
+    ],
+    "schedule": {
+        "Monday": [
+            { "time": "07:00", "classId": "c1", "trainerId": 2 },
+            { "time": "18:00", "classId": "c2", "trainerId": 1 }
+        ],
+        "Tuesday": [
+            { "time": "08:00", "classId": "c3", "trainerId": 3 },
+            { "time": "19:00", "classId": "c1", "trainerId": 2 }
+        ],
+        "Wednesday": [
+            { "time": "07:00", "classId": "c2", "trainerId": 1 },
+            { "time": "18:00", "classId": "c3", "trainerId": 3 }
+        ]
+    }
+}
