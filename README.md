@@ -26,7 +26,7 @@ Infinity Fitness Lab is a modern, responsive website designed for a high-end gym
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/infinity-fitness-lab.git
+    git clone https://github.com/Yasir-Ismail/Fitness-Center-Gym-Website.git
     ```
 2.  **Open Locally**:
     -   Simply open `index.html` in your browser.
@@ -41,3 +41,4 @@ Infinity Fitness Lab is a modern, responsive website designed for a high-end gym
 ## License
 
 MIT License.
+
