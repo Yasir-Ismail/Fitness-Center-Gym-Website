@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Infinity Fitness Lab</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap-overrides.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-infinity text-primary-custom me-2"></i> INFINITY LAB
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                </ul>
+                <div class="d-flex align-items-center ms-lg-4 mt-3 mt-lg-0">
+                    <a href="#" class="btn btn-sm btn-outline-danger me-3" onclick="logout()">Logout</a>
+                    <a href="shop.html" class="nav-link position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge"
+                            style="display:none; font-size: 0.6rem;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="section-padding pt-5 mt-5 pb-0">
+        <div class="container pt-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h5 class="text-primary-custom text-uppercase fw-bold mb-3">Welcome Back</h5>
+                    <h1 class="display-3 fw-bold mb-4">MY <br> DASHBOARD</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dashboard Content -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Stats -->
+                <div class="col-lg-8">
+                    <div class="card glass-panel border-0 p-4 mb-4" data-aos="fade-up">
+                        <h4 class="mb-4">Weekly Activity</h4>
+                        <canvas id="activityChart" height="150"></canvas>
+                    </div>
+
+                    <div class="card glass-panel border-0 p-4" data-aos="fade-up" data-aos-delay="100">
+                        <h4 class="mb-4">Upcoming Bookings</h4>
+                        <div class="list-group bg-transparent">
+                            <div
+                                class="list-group-item bg-transparent border-secondary text-white d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="mb-0">Inferno HIIT</h6>
+                                    <small class="text-muted">Tomorrow, 07:00 AM</small>
+                                </div>
+                                <span class="badge bg-primary">Confirmed</span>
+                            </div>
+                            <div
+                                class="list-group-item bg-transparent border-secondary text-white d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="mb-0">Power Lift</h6>
+                                    <small class="text-muted">Friday, 06:00 PM</small>
+                                </div>
+                                <span class="badge bg-primary">Confirmed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Profile Card -->
+                    <div class="card glass-panel border-0 p-4 mb-4 text-center" data-aos="fade-left">
+                        <div class="mb-3">
+                            <img src="https://ui-avatars.com/api/?name=John+Doe&background=00D4FF&color=fff"
+                                class="rounded-circle" width="100" alt="Profile">
+                        </div>
+                        <h4>John Doe</h4>
+                        <p class="text-muted">Pro Member</p>
+                        <hr class="border-secondary">
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <h5>12</h5>
+                                <small class="text-muted">Workouts</small>
+                            </div>
+                            <div class="col-6">
+                                <h5>2.5k</h5>
+                                <small class="text-muted">Calories</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Saved Workouts -->
+                    <div class="card glass-panel border-0 p-4" data-aos="fade-left" data-aos-delay="100">
+                        <h4 class="mb-3">Saved Plans</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="#"
+                                    class="text-decoration-none d-block p-2 rounded bg-surface border border-secondary">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="text-white">Full Body Blast</span>
+                                        <i class="fas fa-chevron-right text-muted"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#"
+                                    class="text-decoration-none d-block p-2 rounded bg-surface border border-secondary">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="text-white">Core Crusher</span>
+                                        <i class="fas fa-chevron-right text-muted"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="workouts.html" class="btn btn-sm btn-outline-primary w-100">Create New Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Copied) -->
+    <footer class="bg-surface pt-5 pb-3 border-top border-secondary"
+        style="border-color: var(--glass-border) !important;">
+        <div class="container">
+            <div class="text-center pt-4 border-top" style="border-color: var(--glass-border) !important;">
+                <p class="text-muted small mb-0">&copy; 2023 Infinity Fitness Lab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // Chart.js Setup
+        const ctx = document.getElementById('activityChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                datasets: [{
+                    label: 'Calories Burned',
+                    data: [350, 420, 300, 500, 450, 600, 200],
+                    borderColor: '#00D4FF',
+                    backgroundColor: 'rgba(0, 212, 255, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                        ticks: { color: '#9AA6AE' }
+                    },
+                    x: {
+                        grid: { display: false },
+                        ticks: { color: '#9AA6AE' }
+                    }
+                }
+            }
+        });
+
+        function logout() {
+            localStorage.removeItem('user');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+
+</html>
