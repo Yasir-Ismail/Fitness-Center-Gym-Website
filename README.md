@@ -42,3 +42,4 @@ Infinity Fitness Lab is a modern, responsive website designed for a high-end gym
 
 MIT License.
 
+
