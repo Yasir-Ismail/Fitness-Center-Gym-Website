@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership | Infinity Fitness Lab</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap-overrides.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-infinity text-primary-custom me-2"></i> INFINITY LAB
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                </ul>
+                <div class="d-flex align-items-center ms-lg-4 mt-3 mt-lg-0">
+                    <a href="login.html" class="btn btn-sm btn-secondary me-2">Login</a>
+                    <a href="membership.html" class="btn btn-sm btn-primary me-3">Join Now</a>
+                    <a href="shop.html" class="nav-link position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge"
+                            style="display:none; font-size: 0.6rem;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="section-padding pt-5 mt-5 pb-0">
+        <div class="container pt-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h5 class="text-primary-custom text-uppercase fw-bold mb-3">Join the Elite</h5>
+                    <h1 class="display-3 fw-bold mb-4">INVEST IN <br> YOURSELF</h1>
+                    <p class="lead text-muted">Choose the plan that fits your goals. No hidden fees, just results.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pricing Plans -->
+    <section class="section-padding">
+        <div class="container">
+            <!-- Toggle -->
+            <div class="d-flex justify-content-center align-items-center mb-5" data-aos="fade-up">
+                <span class="me-3 text-muted">Monthly</span>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="billingToggle"
+                        style="width: 3em; height: 1.5em;">
+                </div>
+                <span class="ms-3 text-white">Yearly <span class="badge bg-success ms-1">Save 20%</span></span>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Basic Plan -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="card h-100 border-0 glass-panel p-4 text-center">
+                        <h3 class="mb-3">Basic</h3>
+                        <h2 class="display-4 fw-bold text-primary-custom mb-4">$<span class="price-amount"
+                                data-monthly="49" data-yearly="470">49</span><small class="fs-6 text-muted">/mo</small>
+                        </h2>
+                        <ul class="list-unstyled text-start mb-5 mx-auto" style="max-width: 250px;">
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> Gym Access</li>
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> Locker Room</li>
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> Free WiFi</li>
+                            <li class="mb-3 text-muted"><i class="fas fa-times me-2"></i> Group Classes</li>
+                            <li class="mb-3 text-muted"><i class="fas fa-times me-2"></i> Sauna Access</li>
+                        </ul>
+                        <a href="signup.html?plan=basic" class="btn btn-outline-primary w-100 rounded-pill">Select
+                            Plan</a>
+                    </div>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 glass-panel p-4 text-center position-relative"
+                        style="border-color: var(--primary) !important; box-shadow: 0 0 30px rgba(0, 212, 255, 0.1); overflow: visible;">
+                        <div class="position-absolute top-0 start-50 translate-middle">
+                            <span class="badge bg-primary px-3 py-2 rounded-pill">MOST POPULAR</span>
+                        </div>
+                        <h3 class="mb-3 mt-3">Pro</h3>
+                        <h2 class="display-4 fw-bold text-primary-custom mb-4">$<span class="price-amount"
+                                data-monthly="89" data-yearly="850">89</span><small class="fs-6 text-muted">/mo</small>
+                        </h2>
+                        <ul class="list-unstyled text-start mb-5 mx-auto" style="max-width: 250px;">
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> All Basic Features</li>
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> Unlimited Classes</li>
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> Sauna & Steam</li>
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> 1 Guest Pass/mo</li>
+                            <li class="mb-3 text-muted"><i class="fas fa-times me-2"></i> Personal Training</li>
+                        </ul>
+                        <a href="signup.html?plan=pro" class="btn btn-primary w-100 rounded-pill">Select Plan</a>
+                    </div>
+                </div>
+
+                <!-- Elite Plan -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 glass-panel p-4 text-center">
+                        <h3 class="mb-3">Elite</h3>
+                        <h2 class="display-4 fw-bold text-secondary-custom mb-4">$<span class="price-amount"
+                                data-monthly="149" data-yearly="1430">149</span><small
+                                class="fs-6 text-muted">/mo</small></h2>
+                        <ul class="list-unstyled text-start mb-5 mx-auto" style="max-width: 250px;">
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> All Pro Features</li>
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> 2 PT Sessions/mo</li>
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> Nutrition Plan</li>
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> Priority Booking</li>
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> Exclusive Merch</li>
+                        </ul>
+                        <a href="signup.html?plan=elite" class="btn btn-outline-secondary w-100 rounded-pill">Select
+                            Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Copied) -->
+    <footer class="bg-surface pt-5 pb-3 border-top border-secondary"
+        style="border-color: var(--glass-border) !important;">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand mb-4 d-block" href="index.html">
+                        <i class="fas fa-infinity text-primary-custom me-2"></i> INFINITY LAB
+                    </a>
+                    <p class="text-muted">Redefining fitness with premium facilities and expert guidance. Join us and
+                        unleash your potential.</p>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-muted">About Us</a></li>
+                        <li class="mb-2"><a href="classes.html" class="text-muted">Classes</a></li>
+                        <li class="mb-2"><a href="trainers.html" class="text-muted">Trainers</a></li>
+                        <li class="mb-2"><a href="membership.html" class="text-muted">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="text-white mb-4">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html" class="text-muted">Contact</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-muted">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <button class="btn btn-primary px-3"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center pt-4 border-top" style="border-color: var(--glass-border) !important;">
+                <p class="text-muted small mb-0">&copy; 2023 Infinity Fitness Lab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // Pricing Toggle Logic
+        const toggle = document.getElementById('billingToggle');
+        const amounts = document.querySelectorAll('.price-amount');
+
+        toggle.addEventListener('change', () => {
+            const isYearly = toggle.checked;
+            amounts.forEach(amount => {
+                amount.textContent = isYearly ? amount.getAttribute('data-yearly') : amount.getAttribute('data-monthly');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Infinity Fitness Lab</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap-overrides.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-infinity text-primary-custom me-2"></i> INFINITY LAB
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                </ul>
+                <div class="d-flex align-items-center ms-lg-4 mt-3 mt-lg-0">
+                    <a href="login.html" class="btn btn-sm btn-secondary me-2">Login</a>
+                    <a href="membership.html" class="btn btn-sm btn-primary me-3">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="section-padding pt-5 mt-5 pb-0">
+        <div class="container pt-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h5 class="text-primary-custom text-uppercase fw-bold mb-3">Secure Checkout</h5>
+                    <h1 class="display-3 fw-bold mb-4">COMPLETE <br> YOUR ORDER</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Checkout Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Checkout Form -->
+                <div class="col-lg-8">
+                    <div class="glass-panel p-4 p-md-5">
+                        <h4 class="mb-4">Billing Details</h4>
+                        <form id="checkoutForm">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <label for="firstName" class="form-label">First name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="lastName" class="form-label">Last name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="you@example.com"
+                                        required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="address" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="address" placeholder="1234 Main St"
+                                        required>
+                                </div>
+                                <div class="col-md-5">
+                                    <label for="country" class="form-label">Country</label>
+                                    <select class="form-select" id="country" required>
+                                        <option value="">Choose...</option>
+                                        <option>United States</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="state" class="form-label">State</label>
+                                    <select class="form-select" id="state" required>
+                                        <option value="">Choose...</option>
+                                        <option>California</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="zip" class="form-label">Zip</label>
+                                    <input type="text" class="form-control" id="zip" required>
+                                </div>
+                            </div>
+
+                            <hr class="my-4 border-secondary">
+
+                            <h4 class="mb-3">Payment</h4>
+                            <div class="my-3">
+                                <div class="form-check">
+                                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input"
+                                        checked required>
+                                    <label class="form-check-label" for="credit">Credit card</label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input"
+                                        required>
+                                    <label class="form-check-label" for="debit">Debit card</label>
+                                </div>
+                            </div>
+
+                            <div class="row gy-3">
+                                <div class="col-md-6">
+                                    <label for="cc-name" class="form-label">Name on card</label>
+                                    <input type="text" class="form-control" id="cc-name" required>
+                                    <small class="text-muted">Full name as displayed on card</small>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="cc-number" class="form-label">Credit card number</label>
+                                    <input type="text" class="form-control" id="cc-number" required>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="cc-expiration" class="form-label">Expiration</label>
+                                    <input type="text" class="form-control" id="cc-expiration" required>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="cc-cvv" class="form-label">CVV</label>
+                                    <input type="text" class="form-control" id="cc-cvv" required>
+                                </div>
+                            </div>
+
+                            <hr class="my-4 border-secondary">
+
+                            <button class="btn btn-primary w-100 btn-lg" type="submit">Place Order</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="col-lg-4">
+                    <div class="glass-panel p-4">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-primary-custom">Your cart</span>
+                            <span class="badge bg-primary rounded-pill" id="cartCount">0</span>
+                        </h4>
+                        <ul class="list-group list-group-flush bg-transparent" id="orderSummary">
+                            <!-- Items injected here -->
+                        </ul>
+                        <div
+                            class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top border-secondary">
+                            <span class="h5 mb-0">Total (USD)</span>
+                            <strong class="h4 mb-0 text-primary-custom" id="orderTotal">$0.00</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-panel border-0 text-center p-4">
+                <div class="modal-body">
+                    <div class="mb-4">
+                        <i class="fas fa-check-circle text-success fa-4x"></i>
+                    </div>
+                    <h3 class="mb-3">Order Placed!</h3>
+                    <p class="text-muted mb-4">Thank you for your purchase. Your order has been successfully placed.</p>
+                    <a href="index.html" class="btn btn-primary px-4">Return to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Copied) -->
+    <footer class="bg-surface pt-5 pb-3 border-top border-secondary"
+        style="border-color: var(--glass-border) !important;">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand mb-4 d-block" href="index.html">
+                        <i class="fas fa-infinity text-primary-custom me-2"></i> INFINITY LAB
+                    </a>
+                    <p class="text-muted">Redefining fitness with premium facilities and expert guidance. Join us and
+                        unleash your potential.</p>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-muted">About Us</a></li>
+                        <li class="mb-2"><a href="classes.html" class="text-muted">Classes</a></li>
+                        <li class="mb-2"><a href="trainers.html" class="text-muted">Trainers</a></li>
+                        <li class="mb-2"><a href="membership.html" class="text-muted">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="text-white mb-4">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html" class="text-muted">Contact</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-muted">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <button class="btn btn-primary px-3"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center pt-4 border-top" style="border-color: var(--glass-border) !important;">
+                <p class="text-muted small mb-0">&copy; 2023 Infinity Fitness Lab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadOrderSummary();
+
+            const form = document.getElementById('checkoutForm');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                // Simulate processing
+                const btn = form.querySelector('button[type="submit"]');
+                const originalText = btn.textContent;
+                btn.textContent = 'Processing...';
+                btn.disabled = true;
+
+                setTimeout(() => {
+                    // Clear cart
+                    sessionStorage.removeItem('cart');
+
+                    // Show success modal
+                    const modal = new bootstrap.Modal(document.getElementById('successModal'));
+                    modal.show();
+                }, 1500);
+            });
+        });
+
+        function loadOrderSummary() {
+            const cart = JSON.parse(sessionStorage.getItem('cart') || '[]');
+            const summaryList = document.getElementById('orderSummary');
+            const totalEl = document.getElementById('orderTotal');
+            const countEl = document.getElementById('cartCount');
+
+            let total = 0;
+            let count = 0;
+            let html = '';
+
+            if (cart.length === 0) {
+                html = '<li class="list-group-item bg-transparent text-muted text-center py-4">Your cart is empty</li>';
+                document.querySelector('button[type="submit"]').disabled = true;
+            } else {
+                cart.forEach(item => {
+                    const itemTotal = item.price * item.quantity;
+                    total += itemTotal;
+                    count += item.quantity;
+                    html += `
+                        <li class="list-group-item bg-transparent d-flex justify-content-between lh-sm py-3 border-secondary" style="border-color: rgba(255,255,255,0.1) !important;">
+                            <div>
+                                <h6 class="my-0 text-white">${item.name}</h6>
+                                <small class="text-muted">Qty: ${item.quantity}</small>
+                            </div>
+                            <span class="text-muted">$${itemTotal.toFixed(2)}</span>
+                        </li>
+                    `;
+                });
+            }
+
+            summaryList.innerHTML = html;
+            totalEl.textContent = '$' + total.toFixed(2);
+            countEl.textContent = count;
+        }
+    </script>
+</body>
+
+</html>

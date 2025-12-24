@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes | Infinity Fitness Lab</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap-overrides.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-infinity text-primary-custom me-2"></i> INFINITY LAB
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="classes.html">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                </ul>
+                <div class="d-flex align-items-center ms-lg-4 mt-3 mt-lg-0">
+                    <a href="login.html" class="btn btn-sm btn-secondary me-2">Login</a>
+                    <a href="membership.html" class="btn btn-sm btn-primary me-3">Join Now</a>
+                    <a href="shop.html" class="nav-link position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge"
+                            style="display:none; font-size: 0.6rem;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="section-padding pt-5 mt-5 pb-0">
+        <div class="container pt-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h5 class="text-primary-custom text-uppercase fw-bold mb-3">Push Your Limits</h5>
+                    <h1 class="display-3 fw-bold mb-4">DIVERSE <br> TRAINING</h1>
+                    <p class="lead text-muted">From high-intensity intervals to mindful yoga flows, we have a class for
+                        every goal and mood.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Classes Catalogue -->
+    <section class="section-padding">
+        <div class="container">
+            <!-- Filters -->
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-md-8 mx-auto">
+                    <div class="d-flex justify-content-center gap-2 flex-wrap">
+                        <button class="btn btn-outline-light active filter-btn" data-filter="all">All</button>
+                        <button class="btn btn-outline-light filter-btn" data-filter="high">High Intensity</button>
+                        <button class="btn btn-outline-light filter-btn" data-filter="strength">Strength</button>
+                        <button class="btn btn-outline-light filter-btn" data-filter="low">Low Impact</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4" id="classesGrid">
+                <!-- Class 1 -->
+                <div class="col-md-6 col-lg-4 class-item" data-category="high" data-aos="fade-up">
+                    <div class="card h-100 border-0 glass-panel overflow-hidden">
+                        <img src="images/workout.jpeg"
+                            class="card-img-top object-fit-cover" alt="Inferno HIIT" style="height: 250px;">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h3 class="h4 mb-0">Inferno HIIT</h3>
+                                <span class="badge bg-danger">High Intensity</span>
+                            </div>
+                            <p class="text-muted mb-3">45 min • Cardio & Strength</p>
+                            <p class="text-muted small">A full-body workout designed to spike your heart rate and burn
+                                maximum calories.</p>
+                            <a href="schedule.html" class="btn btn-sm btn-outline-primary w-100 mt-3">View Schedule</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Class 2 -->
+                <div class="col-md-6 col-lg-4 class-item" data-category="strength" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="card h-100 border-0 glass-panel overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top object-fit-cover" alt="Power Lift" style="height: 250px;">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h3 class="h4 mb-0">Power Lift</h3>
+                                <span class="badge bg-primary">Strength</span>
+                            </div>
+                            <p class="text-muted mb-3">60 min • Barbell & Weights</p>
+                            <p class="text-muted small">Focus on compound movements to build raw strength and muscle
+                                mass.</p>
+                            <a href="schedule.html" class="btn btn-sm btn-outline-primary w-100 mt-3">View Schedule</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Class 3 -->
+                <div class="col-md-6 col-lg-4 class-item" data-category="low" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 glass-panel overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top object-fit-cover" alt="Zen Flow Yoga" style="height: 250px;">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h3 class="h4 mb-0">Zen Flow Yoga</h3>
+                                <span class="badge bg-success">Low Impact</span>
+                            </div>
+                            <p class="text-muted mb-3">60 min • Flexibility & Mind</p>
+                            <p class="text-muted small">Restore balance and flexibility with this vinyasa-style flow
+                                class.</p>
+                            <a href="schedule.html" class="btn btn-sm btn-outline-primary w-100 mt-3">View Schedule</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Copied) -->
+    <footer class="bg-surface pt-5 pb-3 border-top border-secondary"
+        style="border-color: var(--glass-border) !important;">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand mb-4 d-block" href="index.html">
+                        <i class="fas fa-infinity text-primary-custom me-2"></i> INFINITY LAB
+                    </a>
+                    <p class="text-muted">Redefining fitness with premium facilities and expert guidance. Join us and
+                        unleash your potential.</p>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-muted">About Us</a></li>
+                        <li class="mb-2"><a href="classes.html" class="text-muted">Classes</a></li>
+                        <li class="mb-2"><a href="trainers.html" class="text-muted">Trainers</a></li>
+                        <li class="mb-2"><a href="membership.html" class="text-muted">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="text-white mb-4">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html" class="text-muted">Contact</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-muted">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <button class="btn btn-primary px-3"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center pt-4 border-top" style="border-color: var(--glass-border) !important;">
+                <p class="text-muted small mb-0">&copy; 2023 Infinity Fitness Lab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // Simple Filter Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const classItems = document.querySelectorAll('.class-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active to clicked
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                classItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

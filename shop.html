@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Infinity Fitness Lab</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap-overrides.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-infinity text-primary-custom me-2"></i> INFINITY LAB
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+                </ul>
+                <div class="d-flex align-items-center ms-lg-4 mt-3 mt-lg-0">
+                    <a href="login.html" class="btn btn-sm btn-secondary me-2">Login</a>
+                    <a href="membership.html" class="btn btn-sm btn-primary me-3">Join Now</a>
+                    <a href="#" class="nav-link position-relative" data-bs-toggle="offcanvas"
+                        data-bs-target="#cartOffcanvas">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge"
+                            style="display:none; font-size: 0.6rem;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="section-padding pt-5 mt-5 pb-0">
+        <div class="container pt-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h5 class="text-primary-custom text-uppercase fw-bold mb-3">Gear Up</h5>
+                    <h1 class="display-3 fw-bold mb-4">FITNESS <br> STORE</h1>
+                    <p class="lead text-muted">Premium supplements, apparel, and accessories to fuel your performance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shop Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card h-100 border-0 glass-panel overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1593095948071-474c5cc2989d?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top object-fit-cover" alt="Whey Protein" style="height: 300px;">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Infinity Whey</h5>
+                                <span class="text-primary-custom fw-bold">$49.99</span>
+                            </div>
+                            <p class="text-muted small">Premium isolate protein for maximum recovery.</p>
+                            <button class="btn btn-sm btn-outline-light w-100 mt-3"
+                                onclick="addToCart('Infinity Whey', 49.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 glass-panel overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1517130038641-a774d04afb3c?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top object-fit-cover" alt="Lifting Straps" style="height: 300px;">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Pro Lifting Straps</h5>
+                                <span class="text-primary-custom fw-bold">$19.99</span>
+                            </div>
+                            <p class="text-muted small">Heavy-duty straps for fastening, holding, or carrying items.</p>
+                            <button class="btn btn-sm btn-outline-light w-100 mt-3"
+                                onclick="addToCart('Pro Lifting Straps', 19.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 glass-panel overflow-hidden">
+                        <img src="images/yoga-mat.jpg" class="card-img-top object-fit-cover" alt="Yoga Mat"
+                            style="height: 300px;">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Premium Yoga Mat</h5>
+                                <span class="text-primary-custom fw-bold">$29.99</span>
+                            </div>
+                            <p class="text-muted small">Non-slip, eco-friendly mat for perfect stability.</p>
+                            <button class="btn btn-sm btn-outline-light w-100 mt-3"
+                                onclick="addToCart('Premium Yoga Mat', 29.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal (Simple Alert for now, or Offcanvas) -->
+    <!-- Using Bootstrap Toast for feedback -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="cartToast" class="toast align-items-center text-white bg-success border-0" role="alert"
+            aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Item added to cart!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Copied) -->
+    <footer class="bg-surface pt-5 pb-3 border-top border-secondary"
+        style="border-color: var(--glass-border) !important;">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand mb-4 d-block" href="index.html">
+                        <i class="fas fa-infinity text-primary-custom me-2"></i> INFINITY LAB
+                    </a>
+                    <p class="text-muted">Redefining fitness with premium facilities and expert guidance. Join us and
+                        unleash your potential.</p>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-muted">About Us</a></li>
+                        <li class="mb-2"><a href="classes.html" class="text-muted">Classes</a></li>
+                        <li class="mb-2"><a href="trainers.html" class="text-muted">Trainers</a></li>
+                        <li class="mb-2"><a href="membership.html" class="text-muted">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="text-white mb-4">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html" class="text-muted">Contact</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-muted">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <button class="btn btn-primary px-3"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center pt-4 border-top" style="border-color: var(--glass-border) !important;">
+                <p class="text-muted small mb-0">&copy; 2023 Infinity Fitness Lab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end glass-panel text-white" tabindex="-1" id="cartOffcanvas"
+        aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header border-bottom border-secondary"
+            style="border-color: var(--glass-border) !important;">
+            <h5 class="offcanvas-title" id="cartOffcanvasLabel">Your Cart</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="cartItems" class="d-flex flex-column gap-3">
+                <!-- Cart items will be injected here -->
+                <p class="text-center text-muted my-5">Your cart is empty.</p>
+            </div>
+        </div>
+        <div class="offcanvas-footer p-3 border-top border-secondary"
+            style="border-color: var(--glass-border) !important;">
+            <div class="d-flex justify-content-between mb-3">
+                <span class="h5 mb-0">Total:</span>
+                <span class="h5 mb-0 text-primary-custom" id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn btn-primary w-100" onclick="window.location.href='checkout.html'">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // Initialize Cart Display on Load
+        document.addEventListener('DOMContentLoaded', function () {
+            updateCartDisplay();
+            updateCartCount();
+        });
+
+        // Update Cart Display when Offcanvas is opened
+        const cartOffcanvas = document.getElementById('cartOffcanvas');
+        cartOffcanvas.addEventListener('show.bs.offcanvas', updateCartDisplay);
+
+        function addToCart(name, price) {
+            let cart = JSON.parse(sessionStorage.getItem('cart') || '[]');
+
+            const existingItem = cart.find(item => item.name === name);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({ name: name, price: price, quantity: 1 });
+            }
+
+            sessionStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+            updateCartDisplay(); // Update display if open
+
+            const toast = new bootstrap.Toast(document.getElementById('cartToast'));
+            toast.show();
+        }
+
+        function removeFromCart(name) {
+            let cart = JSON.parse(sessionStorage.getItem('cart') || '[]');
+            cart = cart.filter(item => item.name !== name);
+            sessionStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+            updateCartDisplay();
+        }
+
+        function updateCartDisplay() {
+            const cart = JSON.parse(sessionStorage.getItem('cart') || '[]');
+            const cartItemsContainer = document.getElementById('cartItems');
+            const cartTotalElement = document.getElementById('cartTotal');
+
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = '<p class="text-center text-muted my-5">Your cart is empty.</p>';
+                cartTotalElement.textContent = '$0.00';
+                return;
+            }
+
+            let html = '';
+            let total = 0;
+
+            cart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+                html += `
+                    <div class="d-flex align-items-center gap-3 bg-dark bg-opacity-50 p-2 rounded">
+                        <div class="flex-grow-1">
+                            <h6 class="mb-0">${item.name}</h6>
+                            <small class="text-muted">$${item.price} x ${item.quantity}</small>
+                        </div>
+                        <div class="text-end">
+                            <div class="mb-1">$${itemTotal.toFixed(2)}</div>
+                            <button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeFromCart('${item.name}')">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            });
+
+            cartItemsContainer.innerHTML = html;
+            cartTotalElement.textContent = '$' + total.toFixed(2);
+        }
+    </script>
+</body>
+
+</html>

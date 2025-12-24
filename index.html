@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Fitness Lab | Redefine Your Limits</title>
+    <meta name="description"
+        content="Premium fitness center offering state-of-the-art equipment, expert trainers, and diverse classes. Join Infinity Fitness Lab today.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap-overrides.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-infinity text-primary-custom me-2"></i> INFINITY LAB
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                </ul>
+                <div class="d-flex align-items-center ms-lg-4 mt-3 mt-lg-0">
+                    <a href="login.html" class="btn btn-sm btn-secondary me-2">Login</a>
+                    <a href="membership.html" class="btn btn-sm btn-primary me-3">Join Now</a>
+                    <a href="#" class="nav-link position-relative" data-bs-toggle="offcanvas"
+                        data-bs-target="#cartOffcanvas">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge"
+                            style="display:none; font-size: 0.6rem;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section position-relative d-flex align-items-center"
+        style="min-height: 100vh; overflow: hidden;">
+        <!-- Background SVG/Gradient -->
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index: -1;">
+            <div
+                style="background: radial-gradient(circle at 70% 30%, #1a202c 0%, #0B0F14 70%); width: 100%; height: 100%;">
+            </div>
+            <!-- Clipped Shape -->
+            <svg viewBox="0 0 1440 800" class="position-absolute bottom-0 w-100 h-100" preserveAspectRatio="none"
+                style="opacity: 0.1;">
+                <path fill="#00D4FF" d="M0,200L1440,0L1440,800L0,800Z"></path>
+            </svg>
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920&q=80"
+                alt="Hero Background" class="w-100 h-100 object-fit-cover position-absolute top-0 start-0"
+                style="opacity: 0.3; mix-blend-mode: overlay;">
+        </div>
+
+        <div class="container position-relative" style="z-index: 1;">
+            <div class="row align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <h5 class="text-primary-custom text-uppercase fw-bold mb-3">Welcome to the Future of Fitness</h5>
+                    <h1 class="display-1 fw-bold mb-4" style="line-height: 0.9;">
+                        REDEFINE <br>
+                        <span class="text-outline-light"
+                            style="-webkit-text-stroke: 2px rgba(255,255,255,0.2); color: transparent;">YOUR</span> <br>
+                        LIMITS
+                    </h1>
+                    <p class="lead text-muted mb-5" style="max-width: 500px;">
+                        Experience a new era of training with state-of-the-art equipment, expert coaching, and a
+                        community that pushes you further.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="membership.html" class="btn btn-primary btn-lg">Start Your Journey</a>
+                        <a href="classes.html" class="btn btn-outline-light btn-lg">View Classes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="glass-panel p-4 h-100 text-center">
+                        <div class="icon-box mb-4 mx-auto">
+                            <i class="fas fa-dumbbell fa-2x text-primary-custom"></i>
+                        </div>
+                        <h4 class="mb-3 text-white">Premium Equipment</h4>
+                        <p class="text-muted">Train with the latest Technogym and Rogue Fitness gear designed for peak
+                            performance.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-panel p-4 h-100 text-center">
+                        <div class="icon-box mb-4 mx-auto">
+                            <i class="fas fa-users fa-2x text-primary-custom"></i>
+                        </div>
+                        <h4 class="mb-3 text-white">Expert Trainers</h4>
+                        <p class="text-muted">Get personalized guidance from certified professionals dedicated to your
+                            success.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="glass-panel p-4 h-100 text-center">
+                        <div class="icon-box mb-4 mx-auto">
+                            <i class="fas fa-clock fa-2x text-primary-custom"></i>
+                        </div>
+                        <h4 class="mb-3 text-white">24/7 Access</h4>
+                        <p class="text-muted">Train on your schedule with round-the-clock access to all our facilities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="section-padding bg-surface position-relative overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=800&q=80"
+                            alt="About Us" class="img-fluid rounded-3 shadow-lg" style="filter: brightness(0.8);">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 border border-primary-custom rounded-3"
+                            style="transform: translate(20px, 20px); z-index: -1;"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
+                    <h5 class="text-primary-custom text-uppercase fw-bold mb-3">About Us</h5>
+                    <h2 class="display-4 fw-bold mb-4">MORE THAN JUST <br> A GYM</h2>
+                    <p class="text-muted mb-4">Infinity Fitness Lab is a sanctuary for those who refuse to settle. We
+                        combine cutting-edge technology with holistic wellness to help you achieve balance and strength
+                        in every aspect of your life.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check text-primary-custom me-2"></i> Holistic Wellness
+                            Programs</li>
+                        <li class="mb-2"><i class="fas fa-check text-primary-custom me-2"></i> Advanced Body Composition
+                            Analysis</li>
+                        <li class="mb-2"><i class="fas fa-check text-primary-custom me-2"></i> Recovery Lounge & Sauna
+                        </li>
+                    </ul>
+                    <a href="about.html" class="btn btn-outline-light">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Preview -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h5 class="text-primary-custom text-uppercase fw-bold mb-3">Our Classes</h5>
+                <h2 class="display-4 fw-bold">FIND YOUR RHYTHM</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card border-0 glass-panel overflow-hidden h-100">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top object-fit-cover" alt="HIIT" style="height: 250px;">
+                        <div class="card-body p-4">
+                            <h4 class="card-title mb-3 text-white">High Intensity</h4>
+                            <p class="text-muted mb-4">Push your limits with our signature HIIT classes designed to burn
+                                fat and build endurance.</p>
+                            <a href="classes.html" class="text-primary-custom text-decoration-none fw-bold">View
+                                Schedule <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 glass-panel overflow-hidden h-100">
+                        <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top object-fit-cover" alt="Yoga" style="height: 250px;">
+                        <div class="card-body p-4">
+                            <h4 class="card-title mb-3 text-white">Yoga & Mobility</h4>
+                            <p class="text-muted mb-4">Restore balance and improve flexibility with our expert-led yoga
+                                and mobility sessions.</p>
+                            <a href="classes.html" class="text-primary-custom text-decoration-none fw-bold">View
+                                Schedule <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 glass-panel overflow-hidden h-100">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top object-fit-cover" alt="Strength" style="height: 250px;">
+                        <div class="card-body p-4">
+                            <h4 class="card-title mb-3 text-white">Strength Training</h4>
+                            <p class="text-muted mb-4">Master the fundamentals of lifting and build raw power in our
+                                strength-focused classes.</p>
+                            <a href="classes.html" class="text-primary-custom text-decoration-none fw-bold">View
+                                Schedule <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding position-relative">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index: -1;">
+            <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1920&q=80"
+                alt="CTA Background" class="w-100 h-100 object-fit-cover"
+                style="filter: brightness(0.3); mix-blend-mode: multiply;">
+        </div>
+        <div class="container text-center" data-aos="zoom-in">
+            <h2 class="display-3 fw-bold mb-4">READY TO START?</h2>
+            <p class="lead text-muted mb-5 mx-auto" style="max-width: 600px;">Join Infinity Fitness Lab today and get
+                access to world-class facilities, expert coaching, and a supportive community.</p>
+            <a href="membership.html" class="btn btn-primary btn-lg px-5 py-3">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-surface pt-5 pb-3 border-top border-secondary"
+        style="border-color: var(--glass-border) !important;">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand mb-4 d-block" href="index.html">
+                        <i class="fas fa-infinity text-primary-custom me-2"></i> INFINITY LAB
+                    </a>
+                    <p class="text-muted">Redefining fitness with premium facilities and expert guidance. Join us and
+                        unleash your potential.</p>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-muted">About Us</a></li>
+                        <li class="mb-2"><a href="classes.html" class="text-muted">Classes</a></li>
+                        <li class="mb-2"><a href="trainers.html" class="text-muted">Trainers</a></li>
+                        <li class="mb-2"><a href="membership.html" class="text-muted">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="text-white mb-4">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html" class="text-muted">Contact</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-muted">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <button class="btn btn-primary px-3"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center pt-4 border-top" style="border-color: var(--glass-border) !important;">
+                <p class="text-muted small mb-0">&copy; 2023 Infinity Fitness Lab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end glass-panel text-white" tabindex="-1" id="cartOffcanvas"
+        aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header border-bottom border-secondary"
+            style="border-color: var(--glass-border) !important;">
+            <h5 class="offcanvas-title" id="cartOffcanvasLabel">Your Cart</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="cartItems" class="d-flex flex-column gap-3">
+                <!-- Cart items will be injected here -->
+                <p class="text-center text-muted my-5">Your cart is empty.</p>
+            </div>
+        </div>
+        <div class="offcanvas-footer p-3 border-top border-secondary"
+            style="border-color: var(--glass-border) !important;">
+            <div class="d-flex justify-content-between mb-3">
+                <span class="h5 mb-0">Total:</span>
+                <span class="h5 mb-0 text-primary-custom" id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn btn-primary w-100" onclick="window.location.href='checkout.html'">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // Initialize Cart Display on Load
+        document.addEventListener('DOMContentLoaded', function () {
+            updateCartDisplay();
+            updateCartCount();
+        });
+
+        // Update Cart Display when Offcanvas is opened
+        const cartOffcanvas = document.getElementById('cartOffcanvas');
+        cartOffcanvas.addEventListener('show.bs.offcanvas', updateCartDisplay);
+
+        function removeFromCart(name) {
+            let cart = JSON.parse(sessionStorage.getItem('cart') || '[]');
+            cart = cart.filter(item => item.name !== name);
+            sessionStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+            updateCartDisplay();
+        }
+
+        function updateCartDisplay() {
+            const cart = JSON.parse(sessionStorage.getItem('cart') || '[]');
+            const cartItemsContainer = document.getElementById('cartItems');
+            const cartTotalElement = document.getElementById('cartTotal');
+
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = '<p class="text-center text-muted my-5">Your cart is empty.</p>';
+                cartTotalElement.textContent = '$0.00';
+                return;
+            }
+
+            let html = '';
+            let total = 0;
+
+            cart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+                html += `
+                    <div class="d-flex align-items-center gap-3 bg-dark bg-opacity-50 p-2 rounded">
+                        <div class="flex-grow-1">
+                            <h6 class="mb-0">${item.name}</h6>
+                            <small class="text-muted">$${item.price} x ${item.quantity}</small>
+                        </div>
+                        <div class="text-end">
+                            <div class="mb-1">$${itemTotal.toFixed(2)}</div>
+                            <button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeFromCart('${item.name}')">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            });
+
+            cartItemsContainer.innerHTML = html;
+            cartTotalElement.textContent = '$' + total.toFixed(2);
+        }
+    </script>
+</body>
+
+</html>

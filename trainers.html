@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Trainers | Infinity Fitness Lab</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap-overrides.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-infinity text-primary-custom me-2"></i> INFINITY LAB
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="trainers.html">Trainers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                </ul>
+                <div class="d-flex align-items-center ms-lg-4 mt-3 mt-lg-0">
+                    <a href="login.html" class="btn btn-sm btn-secondary me-2">Login</a>
+                    <a href="membership.html" class="btn btn-sm btn-primary me-3">Join Now</a>
+                    <a href="shop.html" class="nav-link position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge"
+                            style="display:none; font-size: 0.6rem;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="section-padding pt-5 mt-5 pb-0">
+        <div class="container pt-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h5 class="text-primary-custom text-uppercase fw-bold mb-3">Expert Coaching</h5>
+                    <h1 class="display-3 fw-bold mb-4">MEET YOUR <br> MENTORS</h1>
+                    <p class="lead text-muted">Our world-class trainers are here to guide, motivate, and push you to
+                        your limits.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trainers Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Trainer 1 -->
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card h-100 border-0 glass-panel overflow-hidden trainer-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=800&q=80"
+                                class="card-img-top object-fit-cover" alt="Alex Mercer" style="height: 400px;">
+                            <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-dark">
+                                <span class="badge bg-primary mb-2">Strength</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="card-title text-white">Alex "The Titan" Mercer</h3>
+                            <p class="text-muted">Specializes in powerlifting and hypertrophy. Former Olympian with 10
+                                years of experience.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="social-links">
+                                    <a href="#" class="text-muted me-2"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-muted"><i class="fab fa-twitter"></i></a>
+                                </div>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill" data-bs-toggle="modal"
+                                    data-bs-target="#bookingModal" onclick="setTrainer('Alex Mercer')">Book
+                                    Session</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 2 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 glass-panel overflow-hidden trainer-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80"
+                                class="card-img-top object-fit-cover" alt="Sarah Jenkins" style="height: 400px;">
+                            <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-dark">
+                                <span class="badge bg-secondary mb-2">HIIT & Cardio</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="card-title text-white">Sarah Jenkins</h3>
+                            <p class="text-muted">High-energy HIIT instructor who will help you burn calories and build
+                                endurance.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="social-links">
+                                    <a href="#" class="text-muted me-2"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-muted"><i class="fab fa-facebook"></i></a>
+                                </div>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill" data-bs-toggle="modal"
+                                    data-bs-target="#bookingModal" onclick="setTrainer('Sarah Jenkins')">Book
+                                    Session</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 3 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 glass-panel overflow-hidden trainer-card">
+                        <div class="position-relative">
+                            <img src="images/trainer1.jpeg" class="card-img-top object-fit-cover" alt="Marcus Chen"
+                                style="height: 400px;">
+                            <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-dark">
+                                <span class="badge bg-success mb-2">Yoga & Mobility</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="card-title text-white">Marcus Chen</h3>
+                            <p class="text-muted">Focuses on functional movement, flexibility, enhance active range of
+                                motion, joint health, and strength.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="social-links">
+                                    <a href="#" class="text-muted me-2"><i class="fab fa-instagram"></i></a>
+                                </div>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill" data-bs-toggle="modal"
+                                    data-bs-target="#bookingModal" onclick="setTrainer('Marcus Chen')">Book
+                                    Session</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Book a Session</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm">
+                        <div class="mb-3">
+                            <label class="form-label">Trainer</label>
+                            <input type="text" class="form-control" id="bookingTrainer" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Date</label>
+                            <input type="date" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Time</label>
+                            <select class="form-select">
+                                <option>09:00 AM</option>
+                                <option>11:00 AM</option>
+                                <option>02:00 PM</option>
+                                <option>04:00 PM</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Confirm Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Copied) -->
+    <footer class="bg-surface pt-5 pb-3 border-top border-secondary"
+        style="border-color: var(--glass-border) !important;">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand mb-4 d-block" href="index.html">
+                        <i class="fas fa-infinity text-primary-custom me-2"></i> INFINITY LAB
+                    </a>
+                    <p class="text-muted">Redefining fitness with premium facilities and expert guidance. Join us and
+                        unleash your potential.</p>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-muted">About Us</a></li>
+                        <li class="mb-2"><a href="classes.html" class="text-muted">Classes</a></li>
+                        <li class="mb-2"><a href="trainers.html" class="text-muted">Trainers</a></li>
+                        <li class="mb-2"><a href="membership.html" class="text-muted">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="text-white mb-4">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html" class="text-muted">Contact</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-muted">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <button class="btn btn-primary px-3"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center pt-4 border-top" style="border-color: var(--glass-border) !important;">
+                <p class="text-muted small mb-0">&copy; 2023 Infinity Fitness Lab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        function setTrainer(name) {
+            document.getElementById('bookingTrainer').value = name;
+        }
+
+        document.getElementById('bookingForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Booking confirmed! Check your profile for details.');
+            var modal = bootstrap.Modal.getInstance(document.getElementById('bookingModal'));
+            modal.hide();
+        });
+    </script>
+</body>
+
+</html>
